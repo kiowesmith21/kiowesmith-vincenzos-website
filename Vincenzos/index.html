@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Vincenzo's Pizzeria</title>
+    </head>
+
+    <body>
+        
+        <div class="header">
+            <img src="img/banner.jpg" alt="pizza">
+        </div>
+        <div class="navbar">
+            <a href="index.html">Menu</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="row">
+
+            <div class="menu">
+                <img src="img/logo.jpg" alt="vincenzos">
+                <h1>Menu</h1>
+                <table>
+                    <th>Antipasti</th>
+                    <tr>
+                        <td>French Fries</td>
+                        <td>$2.99</td>
+                        <td><span class="addBtn" onclick="newElement('French Fries', '$2.99', 2.99)">Add to Cart</span></td>
+                    </tr>
+                    <tr>
+                        <td>Mozzarella Sticks</td>
+                        <td>$3.99</td>
+                        <td><span class="addBtn" onclick="newElement('Mozzarella Sticks', '$3.99', 3.99)">Add to Cart</span></td>
+                    </tr>
+
+                    <th>Heroes</th>
+                    <tr>
+                        <td>Chicken Parmesan</td>
+                        <td>$7.99</td>
+                        <td><span class="addBtn" onclick="newElement('Chicken Parmesan', '$7.99', 7.99)">Add to Cart</span></td>
+                    </tr>
+                    <tr>
+                        <td>Philly Cheesesteak</td>
+                        <td>$7.99</td>
+                        <td><span class="addBtn" onclick="newElement('Philly Cheesesteak', '$7.99', 7.99)">Add to Cart</span></td>
+                    </tr>
+                    <tr>
+                        <td>Hamburger Hero</td>
+                        <td>$7.99</td>
+                        <td><span class="addBtn" onclick="newElement('Hamburger Hero', '$7.99', 7.99)">Add to Cart</span></td>
+                    </tr>
+                    <tr>
+                        <td>Italian Hero</td>
+                        <td>$7.99</td>
+                        <td><span class="addBtn" onclick="newElement('Italian Hero', '$7.99', 7.99)">Add to Cart</span></td>
+                    </tr>
+
+                    <th>Beverages</th>
+                    <tr>
+                        <td>Coca Cola</td>
+                        <td>$1.99</td>
+                        <td><span class="addBtn" onclick="newElement('Coca Cola', '$1.99', 1.99)">Add to Cart</span></td>
+                    </tr>
+                    <tr>
+                        <td>Fanta</td>
+                        <td>$1.99</td>
+                        <td><span class="addBtn" onclick="newElement('Fanta', '$1.99', 1.99)">Add to Cart</span></td>
+                    </tr>
+                    <tr>
+                        <td>Ginger Ale</td>
+                        <td>$1.99</td>
+                        <td><span class="addBtn" onclick="newElement('Ginger Ale', '$1.99', 1.99)">Add to Cart</span></td>
+                    </tr>
+                    <tr>
+                        <td>Bottled Water</td>
+                        <td>$1.99</td>
+                        <td><span class="addBtn" onclick="newElement('Bottled Water', '$1.99', 1.99)">Add to Cart</span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="cart">
+                <h1>Cart <span id="cart-total">Total: </span><span id="price-total">$0.00</span><span><button type="button">Purchase</button></span></h1>
+                <ul id="cart-list">
+                   
+                </ul>
+            </div>
+
+        </div>
+
+    </body>
+</html>

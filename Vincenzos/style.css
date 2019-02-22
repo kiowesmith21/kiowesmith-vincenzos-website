@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    width: 100%;
+    overflow: hidden;
+}
+
+.navbar img {
+    max-width: 1600;
+}
+
+.navbar {
+    margin: 0px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.575);
+    width: 100%;
+}
+
+.navbar a {
+    display: block;
+    float: left;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: black;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu {
+    flex: 60%;
+    background-color: white;
+    padding: 20px;
+    align-content: center;
+}
+
+.menu img {
+    max-width: 500px;
+}
+
+.menu h1 {
+    font-weight: bold;
+    font-size: 50px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+table {
+   
+}
+
+th {
+    font-weight: bold;
+    font-size: 35px;
+    padding: 8px;
+}
+
+td {
+    padding: 10px;
+    font-size: 25px;
+}
+
+.cart {
+    flex: 40%;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+.cart h1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#cart-total {
+    padding-left: 150px;
+}
+
+.addBtn {
+    border-radius: 50%;
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+.addBtn:hover {
+    background-color: blue;
+    color: white;
+}
+
+.cart ul {
+    list-style-type: none;
+}
+
+.cart ul li {
+   text-decoration: none;
+   font-size: 25px;
+   padding: 10px;
+   cursor: pointer;
+}
+
+.cart ul li:hover {
+    color: red;
+}
+
+.contact {
+    padding: 20px;
+}
+
+button { 
+    font-size: 16px;
+    padding: 5px;
+    margin: 10px;
+    float: right;
+}
+
+.contact-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact {
+    padding: 30px;
+    flex: 60%;
+    align-content: center;
+    font-size: 25px;
+}
+
+.image {
+    padding-top: 10px;
+    flex: 40%;
+    align-content: center;
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
